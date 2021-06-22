@@ -78,12 +78,14 @@ namespace WpfApp2
         }
         public void Enter(char c)
         {
-            if (c == 'C')
+            if (Quarry.Text != "")
             {
-                Quarry.Text = "";
-            }
-            else
-            {
+                if (c == 'C')
+                {
+                    Quarry.Text = "";
+                }
+                else
+                {
                 if (Quarry.Text != "")
                 {
                     if (!(",+-/*".Contains(Quarry.Text[Quarry.Text.Length - 1]) && ",+-/*".Contains(c)))
