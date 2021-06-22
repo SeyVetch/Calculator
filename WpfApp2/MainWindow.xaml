@@ -1,0 +1,109 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" Width="450" Background="Black"
+        ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+        <StackPanel>
+            <TextBlock x:Name="Quarry" Text="123" Foreground="Azure" 
+                       Margin="0 10 0 0"
+                       HorizontalAlignment="Right" FontSize="40"/>
+            <TextBlock x:Name="Solution" VerticalAlignment="Bottom"
+                       Margin="0 50 0 0"
+                       Text="123" Foreground="Azure" 
+                       HorizontalAlignment="Right" FontSize="60"/>
+        </StackPanel>
+        <Rectangle RadiusX="10" RadiusY="10" Grid.Row="1" Margin="2" Fill="White" Opacity="0.4"/>
+        <Rectangle RadiusX="10" RadiusY="10" Grid.Row="0" Margin="2" Fill="White" Opacity="0.6"/>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Button x:Name="B00" Grid.Row="0" Grid.ColumnSpan="3" Grid.Column="0" 
+                    Content="C" Margin="7" Background="Purple"
+                    Opacity="0.4" FontSize="60" Foreground="Red"
+                    Click="B_Click"/>
+            <Button x:Name="B03" Grid.Row="0" Grid.Column="3" 
+                    Content="+" Margin="7" Background="Violet"
+                    Opacity="0.3" FontSize="40" Foreground="Purple"
+                    Click="B_Click"/>
+            <Button x:Name="B10" Grid.Row="1" Grid.Column="0" 
+                    Content="1" Margin="7" Background="Violet"
+                    Opacity="0.3" FontSize="40" Foreground="Purple"
+                    Click="B_Click"/>
+            <Button x:Name="B11" Grid.Row="1" Grid.Column="1" 
+                    Content="2" Margin="7" Background="Violet"
+                    Opacity="0.3" FontSize="40" Foreground="Purple"
+                    Click="B_Click"/>
+            <Button x:Name="B12" Grid.Row="1" Grid.Column="2" 
+                    Content="3" Margin="7" Background="Violet"
+                    Opacity="0.3" FontSize="40" Foreground="Purple"
+                    Click="B_Click"/>
+            <Button x:Name="B13" Grid.Row="1" Grid.Column="3" 
+                    Content="-" Margin="7" Background="Violet"
+                    Opacity="0.3" FontSize="40" Foreground="Purple"
+                    Click="B_Click"/>
+            <Button x:Name="B20" Grid.Row="2" Grid.Column="0" 
+                    Content="4" Margin="7" Background="Violet"
+                    Opacity="0.3" FontSize="40" Foreground="Purple"
+                    Click="B_Click"/>
+            <Button x:Name="B21" Grid.Row="2" Grid.Column="1" 
+                    Content="5" Margin="7" Background="Violet"
+                    Opacity="0.3" FontSize="40" Foreground="Purple"
+                    Click="B_Click"/>
+            <Button x:Name="B22" Grid.Row="2" Grid.Column="2" 
+                    Content="6" Margin="7" Background="Violet"
+                    Opacity="0.3" FontSize="40" Foreground="Purple"
+                    Click="B_Click"/>
+            <Button x:Name="B23" Grid.Row="2" Grid.Column="3" 
+                    Content="*" Margin="7" Background="Violet"
+                    Opacity="0.3" FontSize="40" Foreground="Purple"
+                    Click="B_Click"/>
+            <Button x:Name="B30" Grid.Row="3" Grid.Column="0" 
+                    Content="7" Margin="7" Background="Violet"
+                    Opacity="0.3" FontSize="40" Foreground="Purple"
+                    Click="B_Click"/>
+            <Button x:Name="B31" Grid.Row="3" Grid.Column="1" 
+                    Content="8" Margin="7" Background="Violet"
+                    Opacity="0.3" FontSize="40" Foreground="Purple"
+                    Click="B_Click"/>
+            <Button x:Name="B32" Grid.Row="3" Grid.Column="2" 
+                    Content="9" Margin="7" Background="Violet"
+                    Opacity="0.3" FontSize="40" Foreground="Purple"
+                    Click="B_Click"/>
+            <Button x:Name="B33" Grid.Row="3" Grid.Column="3" 
+                    Content="/" Margin="7" Background="Violet"
+                    Opacity="0.3" FontSize="40" Foreground="Purple"
+                    Click="B_Click"/>
+            <Button x:Name="B40" Grid.Row="4" Grid.Column="0" 
+                    Content="." Margin="7" Background="Violet"
+                    Opacity="0.3" FontSize="40" Foreground="Purple"
+                    Click="B_Click"/>
+            <Button x:Name="B41" Grid.Row="4" Grid.Column="1" 
+                    Content="0" Margin="7" Background="Violet"
+                    Opacity="0.3" FontSize="40" Foreground="Purple"
+                    Click="B_Click"/>
+            <Button x:Name="B42" Grid.Row="4" Grid.ColumnSpan="2" Grid.Column="2" 
+                    Content="=" Margin="7" Background="Violet"
+                    Opacity="0.3" FontSize="40" Foreground="Purple" Click="B42_Click"/>
+        </Grid>
+    </Grid>
+</Window>
