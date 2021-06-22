@@ -49,6 +49,7 @@ namespace WpfApp2
                     return AnswerQuarry(s1) - AnswerQuarry(s2);
                 }
             }
+
             else
             {
                 char[] c2 = { '/', '*' };
