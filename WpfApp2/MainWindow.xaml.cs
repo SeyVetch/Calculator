@@ -27,7 +27,7 @@ namespace WpfApp2
         public double AnswerQuarry(string s)
         {
             int n;
-            char[] c = { '+', '-', '/', '*'};
+            char[] c = { '+', '-', '/', '*' };
             n = s.IndexOfAny(c);
             if (n == -1)
             {
@@ -86,31 +86,30 @@ namespace WpfApp2
                 }
                 else
                 {
-                if (Quarry.Text != "")
-                {
-                    if (!(",+-/*".Contains(Quarry.Text[Quarry.Text.Length - 1]) && ",+-/*".Contains(c)))
+                    if (Quarry.Text != "")
+                    {
+                        if (!(",+-/*".Contains(Quarry.Text[Quarry.Text.Length - 1]) && ",+-/*".Contains(c)))
+                        {
+                            Quarry.Text += c;
+                        }
+                    }
+                    else
                     {
                         Quarry.Text += c;
                     }
                 }
-                else
-                {
-                    Quarry.Text += c;
-                }
             }
-            
         }
-
-        private void B_Click(object sender, RoutedEventArgs e)
+        public void B_Click(object sender, RoutedEventArgs e)
         {
             Button b = (sender as Button);
             char c = ((string)b.Content)[0];
             Enter(c);
         }
-
         private void B42_Click(object sender, RoutedEventArgs e)
         {
             Solution.Text = Convert.ToString(AnswerQuarry(Quarry.Text));
         }
     }
 }
+
